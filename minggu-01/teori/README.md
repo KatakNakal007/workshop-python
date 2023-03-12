@@ -31,4 +31,29 @@ __Argument Passing__<br>
 ketika dapat dibaca atau diketahui oleh interpreter, nama script dan argument tambahan kemudian dirubah menjadi list atau daftar strings, dan dimasukkan ke dalam variabel argv di dalam sys module, dan dapat di akses dengan mengeksekusi import sys. panjang atau isi dari list setidaknya harus satu; ketika tidak terdapat script atau argumen yang diberikan, sys.argv[0] menjadi empty string atau kosong. ketika nama script diberikan sebagai '-' (maksudnya adalah standar input), sys.argv[0] akan diset menjadi '-'. ketika command -c digunakan, sys.argv[0] akan diset menjadi '-c'. ketika -m module digunakan, sys.argv[0] akan diset menjadi full name dari lokasi modul.
 
 __Interactive Mode__<br>
-ketika 
+ketika perintah di baca dari tty, interpreter akan di buat menjadi mode interaktif, pada mode ini primary prompt untuk perintah biasanya diberi tanda >>> atau biasa di sebut REPL dan untuk prompt selanjutnya atau secondary prompt akan di beri tanda ...
+
+__Interpreter dan Environment nya__<br>
+secara default source files dari Python di perlakukan seperti sedang encode di UTF-8
+
+## Bab 3 Pengenalan Python
+input dan ouput dapat di bedakan dengan adanya (>>> dan ...). comment dapat di lakukan dengan memberi tanda pagar #
+### Menggunakan Python Sebagai Kalkulator
+__Numbers__<br>
+interpreter pada Python dapat di gunakan sebagai kalkulator sederhana yang menggunakan perintah + (penjumlahan), - (pengurangan), * (perkalian), dan / (pembagian), sama seperti bahasa pemrograman lainnya
+
+integer atau bilangan bulat dapat menggunakan perintah int, sedangkan pecahan dapat menggunakan perintah float
+
+pembagian menggunakan / selalu menghasilkan bilangan pecahan (tipe data float), dan untuk menampilkan bilangan bulat (tipe data integer) dapat menggunakan perintah //, kemudian untuk menampilkan hasil sisa bagi dapat menggunakan perintah %
+
+Python juga dapat membuat kelipatan dengan menggunakan perintah **
+
+perintah = digunakan untuk memasukan value ke dalam variabel dan jika tidak di berikan maka akan menampilkan output name '...' is not defined
+
+ketika bilangan bilangan bulat dan pecahan di gabungkan, maka akan menghasilkan output pecahan, contohnya 4 * 3.75 - 1 , maka akan menghasilkan 14.0
+
+pada mode interaktif expression terakhir yang di print atau output akan di masukan ke dalam variabel _ sehingga ketika ingin memanggil ulang hasil output dari perhitungan sebelumnya cukup dengan menggunakan varibel _ tanpa perlu di deklarasi terlebih dahulu
+
+__Strings__<br>
+selain angkan, Pytohn juga bisa memanipulasi strings, yang bisa di ekspresikan dengan beberapa cara, bisa menggunakan single quotes ('...') atau double quotes("..."), selain itu bisa menggunakan \ untuk melewati quotes sebelumnya
+
