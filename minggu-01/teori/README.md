@@ -63,4 +63,31 @@ penulisan string dapat di span menjadi beberapa baris, salah satunya menggunakan
 
 string juga dapat di gabungkan menggunakan tanda + ,serta dapat di ulang menggunakan tanda *
 
-string juga dapat digabungkan menggunakan                
+ketika 2 string yang terpisah dan diselubungi oleh quotes atau tanda petik maka kedua string tersebut akan digabungkan, tetapi hanya dapat digunakan oleh literal dan tidak dapat di gunakan pada variabel ataupun expresi, namun jika ingin menggabungkan variabel dengan literal maka dapat menggunakan +
+
+strings juga dapat di indexed atau di pecah ketika hanya ingin menampilkan sebagian dari total string yang ada menggunakan [...], contohnya kata = 'Python', maka ketika ingin memanggil huruf 'P' saja, bisa dengan menuliskan kata[0] (dimulai dari 0), dengan total huruf yang ada yaitu 6 dan huruf 'P' berada di urutan 0 atau paling awal, begitupun ketika ingin menampilkan huruf 'n', maka bisa dengan menuliskan kata[5] (dimulai dari 0), karena huruf 'n' berada di paling akhir
+
+string juga dapat di potong menjadi beberapa kata atau huruf menggunakan [... : ...], contohnya ketika ingin menampilkan kata 'Py' pada 'Python' maka bisa dengan menuliskan kata[0:2], begitu juga ketika ingin menampilkan kata 'tho' maka bisa dengan menuliskan kata[2:5]
+
+string yang sebelumnya telah di potong juga dapat di satukan kembali menggunakan +
+
+string tidak dapat di pecah atau di potong ketika jumlah urutan atau penulisannya melebihi total huruf dari kata yang ada, contohnya kata[42] maka outputnya akan error dikarenakan total huruf dari 'Python' hanya 6 yaitu 0 sampai 5
+
+string pada Python tidak bisa di rubah karena tipe immutable dan jika ingin membuat string yang berbeda maka bisa menggunakan +
+
+total string atau huruf dapat di hitung menggunakan perintah len(...)
+
+__List__<br>
+Python juga mengenal nomor tipe data gabungan atau list. ataupun biasa disebut dengan array
+
+sama seperti strings list dapat di pecah atau di potong dengan hanya memanggil nomor indexnya
+
+list juga dapat digabungkan dengan perintah +
+
+berbeda dengan strings, list merupakan tipe mutable atau bisa di rubah
+
+size pada list dapat dirubah jumlah valuenya, baik di tambahkan di kurangi atau bahkan di hilangkan
+
+fungsi len(...) juga dapat digunakan pada list
+
+list dapat dibuat menjadi nested atau list yang berada di dalam list
