@@ -55,5 +55,12 @@ ketika bilangan bilangan bulat dan pecahan di gabungkan, maka akan menghasilkan 
 pada mode interaktif expression terakhir yang di print atau output akan di masukan ke dalam variabel _ sehingga ketika ingin memanggil ulang hasil output dari perhitungan sebelumnya cukup dengan menggunakan varibel _ tanpa perlu di deklarasi terlebih dahulu
 
 __Strings__<br>
-selain angkan, Pytohn juga bisa memanipulasi strings, yang bisa di ekspresikan dengan beberapa cara, bisa menggunakan single quotes ('...') atau double quotes("..."), selain itu bisa menggunakan \ untuk melewati quotes sebelumnya
+selain angka, Python juga bisa memanipulasi strings, yang bisa di ekspresikan dengan beberapa cara, bisa menggunakan single quotes ('...') atau double quotes("..."), selain itu bisa menggunakan \ untuk melewati quotes sebelumnya
 
+pada interpreter interaktif, ouput string di tutup dengan quotes atau tanda petik dan karakter spesial dapat di lewati dengan backslashes \ . jika ingin tanda \ tidak dibaca sebagai karakter spesial maka dapat menggunakan r untuk menampilkan raw strings
+
+penulisan string dapat di span menjadi beberapa baris, salah satunya menggunakan triple-quotes: """...""" atau '''...'''
+
+string juga dapat di gabungkan menggunakan tanda + ,serta dapat di ulang menggunakan tanda *
+
+string juga dapat digabungkan menggunakan                
