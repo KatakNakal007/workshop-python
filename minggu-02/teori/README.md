@@ -63,4 +63,15 @@ pola bisa saja menggunakan nama konstan. ia harus di berika tanda titik untuk me
 ### Mendefinisikan Functions
 kata kunci def memperkenalkan definisi function. ia harus diikuti dengan nama function dan daftar dalam kurung dari formal parameters.
 
-eksekusi function memperkenalkan tabel simbol baru yang digunakan untuk local variabel dari sebuah function. lebih tepatnya, semua tugas variabel di dalam function menyimpan nilai di local tabel simbol; sedangkan referensi variabel di lihat dulu di local tabel simbol, lalu di local tabel simbol dari enclosing function, lalu di global simbol tabel, dan akhirnya di dalam nama built-in tabel. demikian global variabel dan variabel enclosing function tidak bisa langsung di beri nilai di antara function (kecuali)
+eksekusi function memperkenalkan tabel simbol baru yang digunakan untuk local variabel dari sebuah function. lebih tepatnya, semua tugas variabel di dalam function menyimpan nilai di local tabel simbol; sedangkan referensi variabel di lihat dulu di local tabel simbol, lalu di local tabel simbol dari enclosing function, lalu di global simbol tabel, dan akhirnya di dalam nama built-in tabel. demikian global variabel dan variabel enclosing function tidak bisa langsung di beri nilai di antara function (kecuali, untuk global variabel, nama pada global statement, atau, for variabel dari enclosing function, dinamai di nonlocal statement).
+
+parameter yang sebenarnya (arguments) dari function call di perkenalkan di local tabel simbol dari called function ketika ia di panggil; demikian, argument di lewatkan menggunakan call by value atau dipanggil dari nilai (dimana value atau nilai selalu merupakan objek referensi, bukan value atau nilai dari objek).
+
+ketika function memanggil function lain atau memanggil dirinya secara rekursif, tabel simbol baru akan di buat setelah function di panggil.
+
+definisi function mengasosiasikan nama function dengan function objek di dalam simbol tabel saat ini. interpreter mengenali objek yang di tunjuk dari nama sebagai user-defined function.
+
+return statement dikembalikan dengan value dari function. return tanpa sebuah expression argument di kembalikan None atau kosong.
+
+### Mendefinisikan function lainnya
+
