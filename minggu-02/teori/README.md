@@ -75,3 +75,6 @@ return statement dikembalikan dengan value dari function. return tanpa sebuah ex
 
 ### Mendefinisikan function lainnya
 
+sangat dimungkinkan untuk mendefenisikan function dengan variabel number dari arguments. ada tiga form, yang bisa di kombinasikan
+
+#### Nilai argument default
