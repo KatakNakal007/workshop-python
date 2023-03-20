@@ -61,3 +61,6 @@ kebanyakan literasi di komparisikan dengan dengan persamaan, namun jika hanya sa
 pola bisa saja menggunakan nama konstan. ia harus di berika tanda titik untuk mencegah nya di interpretasikan sebagai capture variabel
 
 ### Mendefinisikan Functions
+kata kunci def memperkenalkan definisi function. ia harus diikuti dengan nama function dan daftar dalam kurung dari formal parameters.
+
+eksekusi function memperkenalkan tabel simbol baru yang digunakan untuk local variabel dari sebuah function. lebih tepatnya, semua tugas variabel di dalam function menyimpan nilai di local tabel simbol; sedangkan referensi variabel di lihat dulu di local tabel simbol, lalu di local tabel simbol dari enclosing function, lalu di global simbol tabel, dan akhirnya di dalam nama built-in tabel. demikian global variabel dan variabel enclosing function tidak bisa langsung di beri nilai di antara function (kecuali)
