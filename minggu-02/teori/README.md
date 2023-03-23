@@ -78,3 +78,20 @@ return statement dikembalikan dengan value dari function. return tanpa sebuah ex
 sangat dimungkinkan untuk mendefenisikan function dengan variabel number dari arguments. ada tiga form, yang bisa di kombinasikan
 
 #### Nilai argument default
+merupakan form yang paling berguna untuk menspesifik nilai default dari satu argumen atau lebih. ia dapat membuat function yang bisa di panggil hanya dengan beberapa argumen dari apa yang dibutuhkan.
+
+function ini dapat di panggil dengan beberapa cara:
+* cukup dengan memberikan argument yang wajib
+* memberikan salah satu argument pilihan
+* atau bahkan memberikan semua argument sekaligus
+
+**Peringatan :** nilai default hanya dapat di evaluasi sekali. ini memberikan perbedaan ketika default adalah mutable objek seperti list, dictionary, atau instansi dari kebanyakan kelas.
+
+#### Argument kata kunci
+function juga bisa di panggil menggunakan kata kunci argumen dari bentuk kwarg=value.
+
+dalam pemanggilan function, kata kunci argument harus mengikuti posisional argument. semua kata kunci argumen yang lewat harus cocok dengan salah satu argument yang diterima oleh function (misalnya, actor bukan merupakan argument yang valid dengan function parrot), dan urutunnya tidak penting. ini juga termasuk non-optional argument (misalnya, parrot(voltage=1000) juga valid). tidak ada argument yang mungkin bisa menerima value atau nilai lebih dari sekali.
+
+ketika final parameter dari form **name ditampilkan, ia menerima dictionary yang memuat semua kata kunci argument kecuali yang sesuai dengan formal parameter. ia mungkin bisa di kombinasikan dengan formal parameter dari form *name yang menerima tuple yang memuat posisional argument di luar dari list formal parameter (*name harus ada terlebih dahulu sebelum **name).
+
+#### Parameters spesial
