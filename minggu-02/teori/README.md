@@ -107,3 +107,25 @@ sangat di mungkinkan untuk menandai beberapa parameter sebagai position-only. ji
 untuk menandai parameters sebagai keyword-only, menunjukkan parameter harus di lewatkan menggunakan argumen kata kunci, tempatkan * pada argument list sebelum keyword-only parameter pertama.
 
 #### Contoh function
+definisi function pertama, standard_arg, merupakan bentuk paling familiar, tidak membatasi konvensi pemanggilan dan argumen dapat diteruskan oleh posisi atau kata kunci
+
+function kedua pos_only_arg dibatasi untuk hanya menggunakan parameter posisi karena ada / dalam definisi fungsi
+
+function ketiga kwd_only_args hanya mengizinkan argumen kata kunci seperti yang ditunjukkan oleh * dalam definisi fungsi
+
+Dan yang terakhir menggunakan ketiga konvensi pemanggilan dalam definisi fungsi yang sama
+
+pertimbangkan definisi fungsi ini yang memiliki potensi benturan antara nama argumen posisi dan **kwds yang memiliki nama sebagai kunci
+
+Tidak ada kemungkinan pemanggilan yang membuatnya mengembalikan True karena kata kunci 'nama' akan selalu mengikat ke parameter pertama
+
+Tetapi menggunakan / (argumen hanya posisi), itu dimungkinkan karena memungkinkan nama sebagai argumen posisi dan 'nama' sebagai kunci dalam argumen kata kunci
+
+Dengan kata lain, nama parameter positional-only dapat digunakan dalam **kwds tanpa ambiguitas
+
+#### Arbitrary Argument Lists
+suatu function dapat dipanggil dengan sejumlah argumen yang berubah-ubah. Argumen ini akan dibungkus dalam tuple. sebelum jumlah argumen variabel, nol atau lebih argumen normal dapat terjadi
+
+Biasanya, argumen variadik ini akan menjadi yang terakhir dalam daftar parameter formal, karena mereka meraup semua argumen masukan yang tersisa yang diteruskan ke function. Parameter formal apa pun yang terjadi setelah parameter *args adalah argumen 'keyword-only', yang berarti bahwa parameter tersebut hanya dapat digunakan sebagai kata kunci daripada argumen posisional.
+
+#### Unpacking Argument Lists
