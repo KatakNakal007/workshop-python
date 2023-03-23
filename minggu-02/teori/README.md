@@ -95,3 +95,15 @@ dalam pemanggilan function, kata kunci argument harus mengikuti posisional argum
 ketika final parameter dari form **name ditampilkan, ia menerima dictionary yang memuat semua kata kunci argument kecuali yang sesuai dengan formal parameter. ia mungkin bisa di kombinasikan dengan formal parameter dari form *name yang menerima tuple yang memuat posisional argument di luar dari list formal parameter (*name harus ada terlebih dahulu sebelum **name).
 
 #### Parameters spesial
+secara default, argument di lewatkan ke function Python dapat melalui posisi ataupun secara explisit menggunakan kata kunci. secara keterbacaan dan performa, sangat masuk akal untuk membatasi cara argument di lewatkan sehingga developar hanya butuh melihat definisi function untuk menentukan jika items di lewatkan melalui posisi, melalui posisi atau kata kunci, atau melalui kunci
+
+#### Argument posisional atau kata kunci
+jika / dan * tidak di muncul pada definis function, argument mungkin saja di lewatkan ke function melalui posisi atau melalui kata kunci.
+
+#### Positional-Only Parameters
+sangat di mungkinkan untuk menandai beberapa parameter sebagai position-only. jika positional-only, urutan parameter diperhitungkan, dan parameter tidak bisa di lewatkan dengan kata kunci. positional-only parameters ditempatkan sebelum / (garis miring). / digunakan untuk secara logis memisahkan positional-only parameters dari parameters yang lain. jika tidak terdapat / pada definisi function, maka tidak ada positional-only parameters
+
+#### Keyword-Only Arguments
+untuk menandai parameters sebagai keyword-only, menunjukkan parameter harus di lewatkan menggunakan argumen kata kunci, tempatkan * pada argument list sebelum keyword-only parameter pertama.
+
+#### Contoh function
