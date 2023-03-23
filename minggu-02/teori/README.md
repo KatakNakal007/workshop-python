@@ -129,3 +129,15 @@ suatu function dapat dipanggil dengan sejumlah argumen yang berubah-ubah. Argume
 Biasanya, argumen variadik ini akan menjadi yang terakhir dalam daftar parameter formal, karena mereka meraup semua argumen masukan yang tersisa yang diteruskan ke function. Parameter formal apa pun yang terjadi setelah parameter *args adalah argumen 'keyword-only', yang berarti bahwa parameter tersebut hanya dapat digunakan sebagai kata kunci daripada argumen posisional.
 
 #### Unpacking Argument Lists
+Situasi sebaliknya terjadi ketika argumen sudah ada dalam daftar atau tupel tetapi perlu dibongkar untuk pemanggilan fungsi yang memerlukan argumen posisi terpisah. Misalnya, fungsi range() bawaan mengharapkan argumen start dan stop yang terpisah. Jika tidak tersedia secara terpisah, tulis pemanggilan fungsi dengan *-operator untuk membongkar argumen dari daftar atau tuple
+
+Dengan cara yang sama, dictionaries dapat menyampaikan argumen kata kunci dengan **-operator
+
+#### Ekspresi lambda
+Fungsi anonim kecil dapat dibuat dengan kata kunci lambda. Fungsi ini mengembalikan jumlah dari dua argumennya: lambda a, b: a+b. Fungsi Lambda dapat digunakan di mana pun objek fungsi diperlukan. Mereka secara sintaksis dibatasi untuk satu ekspresi. Secara semantik, mereka hanyalah gula sintaksis untuk definisi fungsi normal. Seperti definisi fungsi bersarang, fungsi lambda dapat mereferensikan variabel dari cakupan yang memuatnya
+
+#### Dokumentasi string
+Parser Python tidak menghapus indentasi dari literal string multi-baris di Python, jadi alat yang memproses dokumentasi harus menghapus indentasi jika diinginkan. Ini dilakukan dengan menggunakan konvensi berikut. Baris tidak kosong pertama setelah baris pertama string menentukan jumlah lekukan untuk seluruh string dokumentasi. (Kita tidak dapat menggunakan baris pertama karena biasanya bersebelahan dengan tanda kutip pembuka string sehingga indentasinya tidak terlihat dalam literal string.) Spasi "setara" dengan indentasi ini kemudian dihapus dari awal semua baris string . Garis yang indentasinya lebih kecil tidak boleh muncul, tetapi jika muncul, semua spasi putih di depannya harus dihilangkan. Kesetaraan spasi harus diuji setelah penambahan tab (biasanya menjadi 8 spasi).
+
+#### Anotasi function
+Anotasi disimpan dalam atribut __annotations__ dari fungsi sebagai dictionary dan tidak berpengaruh pada bagian lain dari fungsi tersebut. Anotasi parameter ditentukan oleh tanda titik dua setelah nama parameter, diikuti dengan ekspresi yang mengevaluasi nilai anotasi. Anotasi pengembalian ditentukan oleh literal ->, diikuti oleh ekspresi, antara daftar parameter dan titik dua yang menunjukkan akhir pernyataan def. Contoh berikut memiliki argumen yang diperlukan, argumen opsional, dan nilai pengembalian yang dianotasi.
