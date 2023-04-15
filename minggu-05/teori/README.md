@@ -1,4 +1,4 @@
-# Ringkasan Minggu Ke-4
+# Ringkasan Minggu Ke-5
 Nim: **205410121**<br>
 Nama: **Muhammad Syukur**<br>
 Kelas: **IF-3**
@@ -34,4 +34,11 @@ membahas metode-metode yang dapat digunakan untuk membaca, menulis, dan memanipu
 + close(): Metode ini digunakan untuk menutup file yang sudah dibuka.
 + closed: Atribut ini digunakan untuk mengetahui apakah file sudah ditutup atau belum.
 
-###
+### 7.2.2. Saving structured data with json <br>
+membahas cara menggunakan modul json untuk menyimpan dan membaca data terstruktur dalam format JSON.Berikut ini adalah penjelasan singkat dari beberapa metode yang dibahas dalam bagian ini:
++ dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, kw): Metode ini digunakan untuk menulis data terstruktur ke dalam file dalam format JSON. Parameter obj adalah data terstruktur yang akan disimpan, sedangkan fp adalah file object yang akan digunakan untuk menulis data.
++ dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, kw): Metode ini digunakan untuk mengonversi data terstruktur menjadi string dalam format JSON.
++ load(fp, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, kw): Metode ini digunakan untuk membaca file yang berisi data dalam format JSON dan mengembalikan objek Python yang sesuai dengan data tersebut.
++ loads(s, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, kw): Metode ini digunakan untuk mengonversi string dalam format JSON menjadi objek Python.
+
+Tutorial ini juga membahas beberapa parameter yang dapat digunakan untuk mengatur format output JSON, seperti indent, separators, dan sort_keys. Selain itu, tutorial ini juga memberikan contoh penggunaan default dan object_hook, yang dapat digunakan untuk menangani kasus-kasus khusus saat menyimpan atau membaca data dalam format JSON.
