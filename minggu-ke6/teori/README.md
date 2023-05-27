@@ -1,4 +1,4 @@
-# Ringkasan Minggu Ke-5
+# Ringkasan Minggu Ke-6
 Nim: **205410121**<br>
 Nama: **Muhammad Syukur**<br>
 Kelas: **IF-3**
