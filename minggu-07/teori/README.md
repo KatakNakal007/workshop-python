@@ -112,3 +112,128 @@ Objek metode juga dapat diteruskan sebagai argumen ke metode lain atau digunakan
 Pemahaman tentang objek metode memungkinkan kita untuk mengoperasikan metode dengan cara yang lebih fleksibel, seperti menyimpan metode dalam variabel, memanggil metode pada objek instansi yang telah ditentukan sebelumnya, atau mengirimkan objek metode sebagai argumen.
 
 ### 9.3.5. Class and Instance Variables <br>
+Bagian 9.3.5 "Class and Instance Variables" dalam tutorial Python 3 menjelaskan tentang variabel kelas dan variabel instansi.
+
+Variabel kelas adalah variabel yang terkait dengan kelas itu sendiri, bukan dengan objek instansi yang dibuat dari kelas. Variabel kelas dapat diakses melalui kelas atau objek instansi dan berlaku untuk semua objek instansi yang dibuat dari kelas tersebut.
+
+Variabel instansi adalah variabel yang terkait dengan objek instansi tertentu. Setiap objek instansi memiliki salinan terpisah dari variabel instansi, dan perubahan pada variabel instansi tidak mempengaruhi objek instansi lain.
+
+Variabel kelas didefinisikan di dalam tubuh kelas, di luar metode kelas. Mereka dapat diakses melalui notasi titik menggunakan nama kelas atau objek instansi. Variabel kelas juga dapat diakses melalui metode kelas dan metode instansi.
+
+Variabel instansi biasanya didefinisikan di dalam metode kelas, terutama dalam konstruktor kelas "__init__". Setiap objek instansi memiliki salinan terpisah dari variabel instansi tersebut.
+
+Pemahaman tentang variabel kelas dan variabel instansi memungkinkan kita untuk mengatur dan membagikan data antara kelas dan objek instansi. Variabel kelas cocok untuk menyimpan informasi yang bersifat bersama untuk semua objek instansi, sementara variabel instansi cocok untuk menyimpan informasi yang spesifik untuk setiap objek instansi.
+
+## 9.4. Random Remarks <br>
+Bagian 9.4 "Random Remarks" dalam tutorial Python 3 berisi beberapa catatan acak yang berkaitan dengan pemrograman berorientasi objek dalam Python.
+
+Penggunaan penamaan konvensi PEP 8 direkomendasikan dalam pemrograman berorientasi objek Python. Ini mencakup penggunaan huruf kecil dengan pemisah garis bawah untuk nama kelas, penggunaan huruf kapital dengan pemisah garis bawah untuk nama metode, dan sebagainya.
+
+Python mendukung warisan tunggal, yang berarti sebuah kelas hanya dapat mewarisi dari satu kelas dasar.
+
+Metode dan atribut dalam kelas dapat diwarisi dan diubah oleh kelas turunan.
+
+Keyword "super" digunakan untuk mengakses metode yang diwarisi dari kelas dasar saat mendefinisikan metode yang sama di kelas turunan.
+
+Polimorfisme adalah kemampuan objek untuk memiliki banyak bentuk. Dalam Python, polimorfisme dapat dicapai melalui metode yang sama dengan perilaku yang berbeda pada kelas-kelas yang berbeda.
+
+Metode "isinstance()" dan "issubclass()" digunakan untuk memeriksa hubungan antara objek dan kelas dalam hierarki pewarisan.
+
+Encapsulation adalah konsep untuk menyembunyikan implementasi internal objek dan hanya memungkinkan akses melalui antarmuka publik.
+
+Python mendukung multiple inheritance, yang memungkinkan kelas untuk mewarisi dari lebih dari satu kelas dasar. Namun, penggunaan multiple inheritance harus diperhatikan dengan hati-hati untuk menghindari ambiguitas dan konflik.
+
+Duck typing adalah prinsip dalam Python yang berfokus pada perilaku objek daripada tipe kelasnya. Jika objek bertindak seperti bebek dan berbunyi seperti bebek, maka dianggap sebagai bebek.
+
+Perubahan pada kelas induk tidak secara otomatis tercermin pada kelas turunannya. Jika perubahan diperlukan, kelas turunan harus secara eksplisit mengimplementasikan perubahan tersebut.
+
+## 9.5. Inheritance <br>
+Bagian 9.5 "Inheritance" dalam tutorial Python 3 membahas tentang warisan (inheritance) dalam pemrograman berorientasi objek.
+
+Warisan adalah konsep yang memungkinkan kelas untuk mewarisi atribut dan metode dari kelas lain yang disebut kelas dasar atau superclass. Kelas yang mewarisi atribut dan metode disebut kelas turunan atau subclass.
+
+Dalam warisan, kelas turunan dapat menggunakan atribut dan metode yang sudah ada dalam kelas dasar tanpa perlu mendefinisikannya ulang. Ini memungkinkan untuk mengorganisir dan mengelompokkan kode secara hierarkis.
+
+Untuk mewarisi dari kelas dasar, sintaksis "class NamaKelasTurunan(NamaKelasDasar):" digunakan. Dalam definisi kelas turunan, kita dapat menambahkan atribut dan metode baru atau mengubah yang sudah ada.
+
+Konsep warisan juga mendukung konsep polimorfisme, di mana objek kelas turunan dapat digunakan sebagai objek kelas dasar. Hal ini memungkinkan fleksibilitas dalam penggunaan objek dan memungkinkan penggunaan pola desain seperti polimorfisme dan substitusi Liskov.
+
+Pemahaman tentang warisan memungkinkan kita untuk mengorganisir kode secara hierarkis dan memanfaatkan kembali atribut dan metode yang sudah ada dalam kelas dasar, sehingga mempercepat pengembangan dan meningkatkan keterbacaan dan pemeliharaan kode.
+
+### 9.5.1. Multiple Inheritance <br>
+Bagian 9.5.1 "Multiple Inheritance" dalam tutorial Python 3 menjelaskan tentang multiple inheritance atau pewarisan ganda.
+
+Multiple inheritance adalah konsep di mana sebuah kelas dapat mewarisi atribut dan metode dari lebih dari satu kelas dasar. Dalam hal ini, kelas turunan memiliki beberapa kelas dasar.
+
+Dalam Python, untuk menggunakan multiple inheritance, kita dapat menyebutkan beberapa kelas dasar dipisahkan oleh tanda koma setelah kata kunci "class". Kelas turunan akan mewarisi atribut dan metode dari semua kelas dasar yang diberikan.
+
+Multiple inheritance dapat memberikan fleksibilitas dalam merancang hierarki kelas yang kompleks dan memungkinkan untuk menggabungkan fungsionalitas dari berbagai kelas dasar. Namun, penggunaan multiple inheritance harus dilakukan dengan hati-hati untuk menghindari kebingungan dan konflik yang mungkin terjadi.
+
+## 9.6. Private Variables <br>
+Bagian 9.6 "Private Variables" dalam tutorial Python 3 menjelaskan tentang variabel pribadi (private variables) dalam pemrograman berorientasi objek.
+
+Variabel pribadi adalah variabel yang dianggap bersifat pribadi dan seharusnya tidak diakses atau dimodifikasi langsung dari luar kelas. Variabel pribadi dimulai dengan garis bawah ganda (underscore) di awal namanya, seperti "_namaVariabel".
+
+Variabel pribadi diimplementasikan menggunakan konvensi dan aturan tertentu, tetapi secara teknis masih dapat diakses dan dimodifikasi dari luar kelas. Namun, penggunaan garis bawah ganda menandakan bahwa variabel tersebut seharusnya digunakan secara pribadi dan tidak dianggap sebagai bagian publik antarmuka kelas.
+
+Pemahaman tentang variabel pribadi memungkinkan untuk membatasi akses dan modifikasi langsung pada variabel dalam kelas, sehingga mendorong enkapsulasi dan penggunaan metode sebagai antarmuka publik untuk berinteraksi dengan data kelas tersebut.
+
+## 9.7. Odds and Ends <br>
+Bagian 9.7 "Odds and Ends" dalam tutorial Python 3 berisi beberapa informasi tambahan yang berkaitan dengan pemrograman berorientasi objek dalam Python.
+
+Mengakses atribut dan metode kelas langsung menggunakan notasi titik, seperti "NamaKelas.namaAtribut" atau "NamaKelas.namaMetode()".
+
+Dalam Python, objek fungsi juga dapat digunakan sebagai metode kelas dan diakses melalui objek instansi.
+
+Menggunakan fungsi built-in "getattr()" untuk mengakses atribut atau metode dari objek secara dinamis.
+
+Dalam Python, semua tipe data adalah objek, termasuk tipe data dasar seperti angka dan string.
+
+Konstruktor kelas, "__init__()", dapat digunakan untuk melakukan inisialisasi saat objek instansi dibuat.
+
+"self" digunakan dalam definisi metode kelas untuk mengacu pada objek instansi yang sedang dikerjakan.
+
+Penerusan metode ("method delegation") adalah konsep yang memungkinkan objek delegasi untuk memanggil metode pada objek lain.
+
+Dalam Python, tidak ada kewajiban untuk mendeklarasikan tipe parameter dalam definisi metode. Ini dikenal sebagai "duck typing".
+
+Konsep "getter" dan "setter" digunakan untuk mengakses dan memodifikasi atribut dengan cara yang terkontrol.
+
+## 9.8. Iterators <br>
+Bagian 9.8 "Iterators" dalam tutorial Python 3 membahas tentang konsep iterator dalam pemrograman Python.
+
+Iterator adalah objek yang digunakan untuk mengiterasi atau mengulang secara berurutan melalui elemen-elemen dari suatu koleksi atau struktur data. Iterasi adalah proses melalui elemen-elemen satu per satu.
+
+Untuk mendukung iterasi, suatu objek harus mengimplementasikan dua metode khusus: "__iter__()" dan "__next__()". Metode "__iter__()" mengembalikan objek iterator itu sendiri, sementara metode "__next__()" mengembalikan elemen berikutnya dalam iterasi. Jika tidak ada elemen berikutnya, metode "__next__()" harus menghasilkan pengecualian StopIteration untuk menghentikan iterasi.
+
+Iterasi dapat dilakukan menggunakan pernyataan "for" yang umum digunakan dalam Python. Pernyataan "for" akan secara otomatis memanggil metode "__iter__()" untuk mendapatkan iterator dan menggunakan metode "__next__()" untuk mendapatkan elemen-elemen selama iterasi.
+
+Dalam Python, banyak struktur data bawaan seperti list, tuple, set, dan dictionary telah diimplementasikan dengan dukungan untuk iterasi. Selain itu, kita juga dapat membuat iterator kustom dengan mengimplementasikan metode "__iter__()" dan "__next__()" pada kelas kita sendiri.
+
+Pemahaman tentang konsep iterator memungkinkan kita untuk melintasi dan memanipulasi elemen-elemen dalam koleksi dengan cara yang efisien dan mudah dipahami.
+
+## 9.9. Generators <br>
+Bagian 9.9 "Generators" dalam tutorial Python 3 membahas tentang konsep generator dalam pemrograman Python.
+
+Generator adalah fungsi khusus yang menghasilkan serangkaian nilai secara bertahap, satu nilai pada satu waktu, tanpa harus menyimpan seluruh rangkaian nilai dalam memori. Generator memungkinkan kita untuk menghasilkan nilai-nilai secara efisien dalam situasi di mana menghasilkan seluruh rangkaian nilai sekaligus akan memakan banyak memori.
+
+Untuk membuat generator, kita menggunakan kata kunci "yield" dalam fungsi. Ketika "yield" dieksekusi, generator akan menghasilkan nilai tersebut dan menyimpan keadaan internalnya. Pada pemanggilan berikutnya, generator akan melanjutkan dari keadaan terakhirnya dan menghasilkan nilai berikutnya.
+
+Ketika sebuah generator dieksekusi, itu mengembalikan objek generator yang dapat diiterasi. Kita dapat menggunakan pernyataan "for" untuk mengiterasi melalui nilai-nilai yang dihasilkan oleh generator, atau menggunakan fungsi bawaan seperti "next()" untuk mendapatkan nilai berikutnya.
+
+Generator sangat berguna dalam situasi di mana kita perlu menghasilkan serangkaian nilai yang besar atau tak terbatas secara efisien. Mereka juga memungkinkan pemrogram untuk menggunakan konsep "lazy evaluation" di mana nilai-nilai dihasilkan hanya ketika mereka benar-benar diperlukan.
+
+Pemahaman tentang konsep generator memungkinkan kita untuk membuat fungsi yang menghasilkan serangkaian nilai secara efisien dan membantu menghemat sumber daya memori.
+
+## 9.10. Generator Expressions <br>
+Bagian 9.10 "Generator Expressions" dalam tutorial Python 3 membahas tentang ekspresi generator, yang merupakan cara singkat untuk membuat generator dalam Python.
+
+Generator expression mirip dengan list comprehension, tetapi menggunakan tanda kurung () daripada tanda kurung siku []. Mereka memungkinkan kita untuk membuat generator secara langsung dalam satu baris kode, tanpa perlu mendefinisikan fungsi terpisah.
+
+Dalam generator expression, kita menuliskan ekspresi yang menghasilkan nilai untuk setiap elemen dalam rangkaian yang diinginkan. Generator expression akan secara otomatis menghasilkan nilai-nilai ini satu per satu saat diminta, tanpa perlu menyimpan semua nilai dalam memori.
+
+Kita dapat menggunakan generator expression dalam berbagai konteks, seperti argumen fungsi, dalam konstruksi perulangan, atau dalam fungsi lain yang menerima iterator.
+
+Generator expression sangat berguna ketika kita hanya perlu menghasilkan serangkaian nilai sementara, tanpa membutuhkan struktur data list yang lengkap. Ini dapat menghemat penggunaan memori dan mempercepat eksekusi kode.
+
+Pemahaman tentang generator expression memungkinkan kita untuk menggunakan pendekatan yang lebih ringkas dan efisien dalam menghasilkan dan memanipulasi serangkaian nilai dalam Python.
