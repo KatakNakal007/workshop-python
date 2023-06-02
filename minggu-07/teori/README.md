@@ -5,7 +5,7 @@ Kelas: **IF-3**
 ___
 
 # 9. Classes <br>
-Bagian 9. Classes dalam tutorial Python 3 membahas tentang kelas (classes) dalam Python. Berikut adalah ringkasan yang lebih ringkas namun mudah dipahami:
+Bagian 9. Classes dalam tutorial Python 3 membahas tentang kelas (classes) dalam Python:
 
 1. Kelas adalah struktur dasar untuk membuat objek dalam Python.
 2. Kelas memiliki atribut (variabel) dan metode (fungsi) yang terkait dengan objek.
