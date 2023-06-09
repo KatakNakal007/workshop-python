@@ -4,6 +4,8 @@ Nama: **Muhammad Syukur**<br>
 Kelas: **IF-3**
 ___
 
+# 10. Brief Tour of the Standard Library <br>
+
 ## 10.1. Operating System Interface <br>
 
 Bagian 10.1 dari tutorial modul standar library Python membahas antarmuka sistem operasi (Operating System Interface). Bagian ini memberikan kemampuan untuk berinteraksi dengan sistem operasi melalui modul "os". Fungsi-fungsi yang dibahas dalam bagian ini meliputi:
@@ -40,6 +42,8 @@ Bagian 10.9 dari tutorial modul standar library Python membahas kompresi data me
 
 ## 10.10. Performance Measurement <br>
 Bagian 10.10 dari tutorial modul standar library Python membahas pengukuran kinerja (performance measurement) menggunakan modul "timeit". Modul ini memungkinkan kita untuk mengukur waktu eksekusi kode Python dengan presisi tinggi. Dengan menggunakan "timeit.timeit()", kita dapat membandingkan kinerja kode, mengidentifikasi bagian yang memakan waktu eksekusi lama, dan memperbaiki efisiensi program. Modul "timeit" memberikan alat yang kuat untuk melakukan pengukuran kinerja dalam program Python.
+
+# 11. Brief Tour of the Standard Library — Part II <br>
 
 ## 10.11. Quality Control <br>
 Bagian 10.11 dari tutorial modul standar library Python membahas kontrol kualitas kode. Modul "doctest" digunakan untuk pengujian dan verifikasi dokumentasi kode, sedangkan modul "unittest" menyediakan kerangka kerja pengujian unit. Terdapat juga tools eksternal seperti "pylint" dan "flake8" yang membantu menganalisis dan meningkatkan kualitas kode Python. Dengan menggunakan modul dan alat ini, kita dapat memastikan kualitas kode dengan melakukan pengujian, verifikasi dokumentasi, dan penerapan praktik yang baik dalam penulisan kode.
