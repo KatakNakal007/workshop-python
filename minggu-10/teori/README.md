@@ -20,3 +20,10 @@ pada langkah ini terdapat petunjuk untuk menginstall psycopg2 sebagai dependency
 pada langkah ini terdapat petunjuk untuk melakukan koneksi ke dalam cluster di CockroachDB, dan perintah untuk melakukan transfer data dengan menjalankan example.py.
 
 ## Bagian menggunakan SQLAlchemy dengan CockroachDB <br>
+bagian ini memberikan tutorial atau petunjuk seputar membuat CRUD sederhana dengan CockroachDB dan SQLAlchemy
+
+adapun langkah-langkahnya  adalah sebagai berikut : <br>
+#### Step 1. Start CockroachDB <br>
+langkah ini sama seperti yang ada pada "Bagian menggunakan psycopg2 dengan CockroachDB".
+
+#### Step 2. Get the code <br>
