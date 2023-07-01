@@ -24,4 +24,14 @@ pada bagian ini di jelaskan tentang penggunaan static files seperti gambar, CSS,
 ### Blog Blueprint <br>
 pada bagian ini di jelaskan tentang pembuatan blog dan komponen-komponen di dalamnya, seperti halaman index, update, dan create. fungsi create, update, dan delete, yang berisi pembuatan tampilan untuk menampilkan daftar posting, menampilkan posting individu, menambahkan posting baru, serta mengedit dan menghapus posting yang ada. seperti blog yang ada di internet
 
-## Make the Project Installable <br>
+### Make the Project Installable <br>
+pada bagian ini di jelaskan tentang cara membuat file project untuk di install di environment lain tanpa harus mengulang semua langkah-langkah sebelumnya dari awal
+
+### Test Coverage <br>
+pada bagian ini di jelaskan tentang pentingnya pengujian dalam pengembangan aplikasi web dan memberikan langkah-langkah praktis untuk mengatur dan menjalankan pengujian pada aplikasi flask. bagian "Setup and Fixtures" dalam tutorial ini membahas tentang pengaturan (setup) dan penggunaan fixtures dalam pengujian. Fixtures adalah kode yang digunakan untuk mengatur kondisi awal yang konsisten sebelum menjalankan setiap tes. Tutorial menjelaskan cara menggunakan fixture dalam pengujian aplikasi flask menggunakan modul pytest dan menyediakan contoh penggunaannya. Penggunaan fixtures membantu mengatur kondisi awal yang konsisten, memisahkan tes satu sama lain, dan meningkatkan efisiensi dan efektivitas pengujian.
+
+### Deploy to Production <br>
+pada bagian ini di jelaskan tentang proses deployment (implementasi) aplikasi flask ke lingkungan produksi. tutorial ini juga membahas opsi deployment, konfigurasi server web, pengaturan environment, dan langkah-langkah untuk mengimplementasikan aplikasi flask secara efisien.
+
+### Keep Developing! <br>
+bagian ini merupakan penjelasan singkat tentang langkah-langkah sebelumnya yang telah di selesaikan dan juga berisi tentang link-link penjelasan lanjutan tentang pengembangan web menggunakan aplikasi atau framework flask.
